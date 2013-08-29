@@ -1,3 +1,24 @@
-h1 {
-	
+.homepage {
+
+	.page-title {
+		text-align: center;
+		h1 {margin: 0;}
+		h2 {margin-bottom: 1em;}
+	}
+
+	.portfolio-categories {
+		background: #333;
+		padding-top: 1em;
+	}
+
+	.architect-build {
+		padding: 2em 0;
+		background: #ccc;
+		h2 {text-transform: uppercase;}
+	}
+
+	.latest-news {
+		padding: 2em 0;
+	}
+
 }

@@ -4680,6 +4680,8 @@ a.th {
   padding: 0 0 1.5em 0; }
   .page-content ul {
     padding-left: 2em; }
+  .page-content ul.layout {
+    padding-left: 0; }
 
 .ico-social {
   display: inline-block;
@@ -4760,3 +4762,20 @@ footer {
   padding: 1rem 0; }
   footer #20mile-mark {
     float: right; }
+
+.homepage .page-title {
+  text-align: center; }
+  .homepage .page-title h1 {
+    margin: 0; }
+  .homepage .page-title h2 {
+    margin-bottom: 1em; }
+.homepage .portfolio-categories {
+  background: #333;
+  padding-top: 1em; }
+.homepage .architect-build {
+  padding: 2em 0;
+  background: #ccc; }
+  .homepage .architect-build h2 {
+    text-transform: uppercase; }
+.homepage .latest-news {
+  padding: 2em 0; }
