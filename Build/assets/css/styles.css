@@ -4777,5 +4777,12 @@ footer {
   background: #ccc; }
   .homepage .architect-build h2 {
     text-transform: uppercase; }
+  .homepage .architect-build .testimonial {
+    font-style: italic;
+    color: #777; }
 .homepage .latest-news {
   padding: 2em 0; }
+
+.news .headline {
+  border-bottom: 1px solid #f1f1f1;
+  padding-top: 1em; }
