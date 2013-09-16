@@ -1,9 +1,31 @@
 .homepage {
+	
+	.hero-bg {
+		position: fixed;
+		z-index: -1;
+		background: url(automotive-baystate-slide2.jpg) no-repeat 50% 50%;
+		background-size: cover;
+		height: 80%; width: 100%;
+		display: block;
+	}
+	section.hero {
+		position: relative;
+		// background: url(automotive-baystate-slide.jpg) no-repeat 50% 50%;
+		// background-size: cover;
+		padding-top: 2rem;
+		height: 26rem;
+	}
 
 	.page-title {
+		width: 100%;
+		
+		margin-top: 2rem;
+		// background: rgba(255,255,255,.9);
+		padding: 1rem;
 		text-align: center;
-		h1 {margin: 0;}
-		h2 {margin-bottom: 1em;}
+		h1, h2, h3, a {color: #fff; font-weight: normal;}
+		h1 {margin: 0; text-transform: uppercase; }
+		h2 {margin-bottom: 1rem;}
 	}
 
 	.portfolio-categories {
@@ -13,13 +35,52 @@
 
 	.architect-build {
 		padding: 2em 0;
-		background: #ccc;
-		h2 {text-transform: uppercase;}
-		.testimonial {font-style: italic; color: #777;}
+		// background: rgba(0,0,0,0.65);
+		background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.65) 39%, rgba(0,0,0,0.65) 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(39%,rgba(0,0,0,0.65)), color-stop(100%,rgba(0,0,0,0.65))); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 39%,rgba(0,0,0,0.65) 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 39%,rgba(0,0,0,0.65) 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 39%,rgba(0,0,0,0.65) 100%); /* IE10+ */
+		background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 39%,rgba(0,0,0,0.65) 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 ); /* IE6-9 */
+
+		h1, li, p {color: #fff;}
+		h1 {text-transform: uppercase; text-align: center; }
+		ul {width: 50%; margin: 2rem auto;}
+		.testimonial {font-style: italic; text-align: center;}
+		.cta {text-align: center;}
 	}
 
 	.latest-news {
-		padding: 2em 0;
+		padding: 2em 0 3em;
+		background: #333;
+		h2, h3, h4, h5, li, p  {color: #888;}	
 	}
 
+}
+
+
+.page-content.homepage {
+	padding: 0;
+}
+
+.industries-nav {
+	margin-bottom: 0;
+	text-align: center;
+	li {display: inline-block; text-align: center; padding: 0 1em;}
+	h3 {
+		font-size: emCalc(18px);
+		display: inline;
+	}
+}
+
+@media #{$screen} { 
+	
+	.homepage .page-title {
+		// bottom: 0;
+	}
+}
+
+@media #{$small} { 
+	
 }

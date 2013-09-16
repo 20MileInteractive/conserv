@@ -14,7 +14,7 @@
 // $em-base: 16px;
 
 // We use these to control various global styles
-// $body-bg: #fff;
+  $body-bg: transparent;
 // $body-font-color: #222;
 // $body-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 // $body-font-weight: normal;
@@ -70,7 +70,7 @@
 
 // We use these to control header font styles
 // $header-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-// $header-font-weight: bold;
+   $header-font-weight: normal;
 // $header-font-style: normal;
 // $header-font-color: #222;
 // $header-line-height: 1.4;
@@ -79,12 +79,12 @@
 // $header-text-rendering: optimizeLegibility;
 
 // We use these to control header font sizes
-// $h1-font-size: emCalc(44px);
-// $h2-font-size: emCalc(37px);
-// $h3-font-size: emCalc(27px);
-// $h4-font-size: emCalc(23px);
-// $h5-font-size: emCalc(18px);
-// $h6-font-size: 1em;
+   $h1-font-size: emCalc(42px);
+   $h2-font-size: emCalc(26px);
+   $h3-font-size: emCalc(20px);
+   $h4-font-size: emCalc(18px);
+   $h5-font-size: 1em;
+   $h6-font-size: 1em;
 
 // These control how subheaders are styled.
 // $subheader-line-height: 1.4;
@@ -945,38 +945,38 @@
 //
 
 // Background color for the top bar
-// $topbar-bg: #111;
+   $topbar-bg: #fff;
 
 // Height and margin
-// $topbar-height: 45px;
+//  $topbar-height: 45px;
 // $topbar-margin-bottom: emCalc(30px);
 
 // Control Input height for top bar
 // $topbar-input-height: 2.45em;
 
 // Controlling the styles for the title in the top bar
-// $topbar-title-weight: bold;
-// $topbar-title-font-size: emCalc(17px);
+   $topbar-title-weight: normal;
+ $topbar-title-font-size: 1em;
 
 // Set the link colors and styles for top-level nav
-// $topbar-link-color: #fff;
-// $topbar-link-weight: bold;
-// $topbar-link-font-size: emCalc(13px);
+   $topbar-link-color: #666;
+   $topbar-link-weight: normal;
+   $topbar-link-font-size: 1em;
 
 // Style the top bar dropdown elements
-// $topbar-dropdown-bg: #333;
-// $topbar-dropdown-link-color: #fff;
+  $topbar-dropdown-bg: #fff;
+ $topbar-dropdown-link-color: #666;
 // $topbar-dropdown-toggle-size: 5px;
-// $topbar-dropdown-toggle-color: #fff;
+   $topbar-dropdown-toggle-color: #aaa;
 // $topbar-dropdown-toggle-alpha: 0.5;
 // $dropdown-label-color: #555;
 
 // Top menu icon styles
 // $topbar-menu-link-transform: uppercase;
 // $topbar-menu-link-font-size: emCalc(13px);
-// $topbar-menu-link-weight: bold;
-// $topbar-menu-link-color: #fff;
-// $topbar-menu-icon-color: #fff;
+   $topbar-menu-link-weight: normal;
+   $topbar-menu-link-color: #666;
+   $topbar-menu-icon-color: #666;
 // $topbar-menu-link-color-toggled: #888;
 // $topbar-menu-icon-color-toggled: #888;
 

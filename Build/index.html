@@ -40,82 +40,69 @@
 
 </head>
 <body>
-<header>
+<header class="contain-to-grid sticky">
 	<div class="row">
-		<div class="columns large-8">
+		<div class="columns large-2 small-5 small-centered large-uncentered">
 			<a class='current' href="index.html"><h1 class="site-id"><img src="http://placehold.it/300x100&amp;text=LOGO"></h1></a>
 		</div>
-		<div class="columns large-4">
-			<p>
-			800-111-2222
-			<a href="http://facebook.com/" class="ico-facebook ico-social"><img src="assets/img/facebook-32.png"></a>
-			<a href="http://twitter.com/" class="ico-twitter ico-social"><img src="assets/img/twitter-32.png" class="ico-twitter"></a>
-		</div>
-	</div>
-	<div class="row">
-		<div class="columns large-12">
-
+		<div class="columns large-10 nav-col">
+			
 			<nav class="top-bar">
 				  <ul class="title-area">
 				    <!-- Title Area -->
-				    <li class="name"></li>
-				    <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+				   <li class="name"></li>
 				    <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
 				  </ul>
 
 				  <section class="top-bar-section">
 				    <!-- Left Nav Section -->
 				    <ul class="left">
-				      <li><a href="architect-build.html">Architect + Build</a></li>
-				      <li><a href="process.html">Our Process</a></li>
-				      <li><a href="services.html">Services</a></li>
-				      <li><a href="portfolio.html">Portfolio</a></li>
+				      <li class="has-dropdown"><a href="architect-build.html">Architect + Build</a>
+				      	<ul class="dropdown">
+				      		<li><a href="process.html">Process</a></li>
+				      		<li><a href="services.html">Services</a></li>
+				      		<li><a href="portfolio.html">Portfolio</a></li>
+				      	</ul>
+				      </li>			      
 				      <li><a href="about-us.html">About Us</a></li>
 				      <li><a href="news.html">News</a></li>
 				      <li><a href="contact.html">Contact</a></li>
+				       <li class="has-form phone">800-111-2222</li>
+				      <li class="has-form search">
+				        <a href="#"><i class="foundicon-search"></i></a>
+				      </li>
 				    </ul>
+				    
 				  </section>
 				</nav>
-
 		</div>
 	</div>
+	
 </header>
 
+
+
 <div class="page-content homepage"> <!-- use the article tag if appropriate -->
-	<div class="row page-title">
-		<div class="columns large-12">
+<div class="hero-bg"></div>
+<section class="hero">
+	<div class="page-title">
 			<h1>One team, from architecture to build</h1>
 			<h2>That's how we control quality, cost and time.</h2>
-		</div>
+			<ul class="no-bullet industries-nav">
+							<li><h3><a href="#">Automotive</a></h3></li>
+							<li><h3><a href="#">Medical/Healthcare</a></h3></li>
+							<li><h3><a href="#">Commercial</a></h3></li>
+							<li><h3><a href="#">Retail</a></h3></li>
+							<li><h3><a href="#">Industrial</a></h3></li>
+							<li><h3><a href="#">Fine Residential</a></h3></li>
+						</ul>
 	</div>
-	<section class="portfolio-categories">
-		<div class="row">
-			<div class="columns large-12">
-				<ul class="small-block-grid-2 large-block-grid-3 layout">
-	<li><a href="automotive-architecture.html"><img src="http://placehold.it/400x200&amp;text=Automotive"></a></li>
-	<li><a href="automotive-architecture.html"><img src="http://placehold.it/400x200&amp;text=Medical/Healthcare"></a></li>
-	<li><a href="automotive-architecture.html"><img src="http://placehold.it/400x200&amp;text=Office"></a></li>
-	<li><a href="automotive-architecture.html"><img src="http://placehold.it/400x200&amp;text=Retail"></a></li>
-	<li><a href="automotive-architecture.html"><img src="http://placehold.it/400x200&amp;text=Industrial"></a></li>
-	<li><a href="automotive-architecture.html"><img src="http://placehold.it/400x200&amp;text=Fine Residential"></a></li>
-</ul>
-			</div>
-		</div>
-	</section>
+</section>	
 	
 	<section class="architect-build">
 		<div class="row">
-			<div class="columns large-6">
-				<h2>Architect</h2>
-				<ul>
-					<li>Benefit/key point</li>
-					<li>Benefit/key point</li>
-					<li>Benefit/key point</li>
-					<li>Benefit/key point</li>
-				</ul>
-			</div>
-			<div class="columns large-6">
-				<h2>Build</h2>
+			<div class="columns large-6 small-centered">
+				<h1>Architect + Build</h1>	
 				<ul>
 					<li>Benefit/key point</li>
 					<li>Benefit/key point</li>
@@ -126,8 +113,8 @@
 		</div>
 		<div class="row">
 			<div class="columns large-12">
-				<p class="testimonial">"This is a random testimonial. Very persuasive!"<br>- David Miller</p>
-				<p><a href="contact.html" class="button">Contact Us for an Estimate</a> <a href="process.html" class="button secondary">Learn About Our Process</a></p>
+				<p class="testimonial">&ldquo;This is a random testimonial. Very persuasive!&rdquo;<br>- David Miller</p>
+				<p class="cta"><a href="contact.html" class="button">Contact Us for an Estimate</a> <a href="process.html" class="button secondary">Learn About Our Process</a></p>
 
 			</div>
 		</div>	
@@ -145,7 +132,7 @@
 				<a href="news.html">Read more news</a>
 			</div>
 			<div class="columns large-4">
-				<h4>Newsletter</h4>
+				<h2>Newsletter</h2>
 				<p>Some text</p>
 				<input type="email" placeholder="Email"><a href="#" class="button prefix">Sign Up</a>
 			</div>
@@ -165,10 +152,10 @@
 				if (year<1900) year+=1900;
 				document.write(year);
 				//-->
-				</SCRIPT> ConServ Group | Architects + Builders. All rights reserved.</p>
+				</SCRIPT> ConServ Group | <em>Architects + Builders serving Cape Cod and the Greater Boston area.</em> <a href="http://facebook.com/" class="ico-facebook ico-social"><img src="assets/img/facebook-64.png"></a> <a href="http://linkedin.com/" class="ico-linkedin ico-social"><img src="assets/img/linkedin-64.png"></a><br>All rights reserved.</p>
 		</div>
 		<div class="columns large-2">
-			<a href="http://www.20mile.in" target="_blank" id="20mile-mark"><img src="http://www.20mile.in/20mile-label-dark.png" alt="Made by 20Mile Interactive"></a>
+			<a href="http://www.20mile.in" target="_blank" id="twenty-mile"><img src="http://www.20mile.in/20mile-label-dark.png" alt="Made by 20Mile Interactive"></a>
 		</div>
 	</div>
 </footer>

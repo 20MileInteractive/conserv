@@ -1,13 +1,20 @@
 header {
 	padding-top: 1rem;
+	border-bottom: 1px solid #ccc;
 	h1.site-id {margin: 0 0 1rem;}
+	li.phone, li.search {font-weight: normal; padding-right: 2em; line-height: 45px;}
+	
+
 }
+
 
 header .top-bar .top-bar-section li {
 	border-top: solid 1px lighten($topbar-dropdown-bg, 10%);
 	border-bottom: solid 1px darken($topbar-dropdown-bg, 5%);
 	border-left: none;
 	border-right: none;
+	text-transform: uppercase;
+	color: #666;
 	&:first-child {
 		border-top: none;
 	}
@@ -17,7 +24,7 @@ header .top-bar .top-bar-section li {
 }
 
 
-@media #{$small} { 
+@media #{$screen} { 
 	header .top-bar .top-bar-section li {
 		border-left: solid 1px darken($topbar-bg, 5%);
 		border-right: solid 1px lighten($topbar-bg, 10%);
@@ -31,4 +38,13 @@ header .top-bar .top-bar-section li {
 
 		}
 	}
+	.contain-to-grid .top-bar {margin-bottom: 0;}
+	// .nav-col {background: #f1f1f1;}
+	// h5.phone {background: #f1f1f1;}
+
+}
+
+@media #{$small} { 
+	// .nav-col {background: #fff;}
+	// h5.phone {display: block; background: #fff;}
 }
