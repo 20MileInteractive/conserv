@@ -5084,6 +5084,8 @@ footer {
   background: #222;
   color: #f1f1f1;
   padding: 2rem 0; }
+  footer em {
+    color: #999; }
   footer #twenty-mile {
     float: right; }
 
@@ -5104,7 +5106,7 @@ footer {
   margin-top: 2rem;
   padding: 1rem;
   text-align: center; }
-  .homepage .page-title h1, .homepage .page-title h2, .homepage .page-title h3, .homepage .page-title a {
+  .homepage .page-title h1, .homepage .page-title h2, .homepage .page-title h3 {
     color: #fff;
     font-weight: normal; }
   .homepage .page-title h1 {
@@ -5144,6 +5146,8 @@ footer {
     text-align: center; }
   .homepage .architect-build .cta {
     text-align: center; }
+    .homepage .architect-build .cta a {
+      margin: 0 1em 1em; }
 .homepage .latest-news {
   padding: 2em 0 3em;
   background: #333; }
@@ -5163,6 +5167,14 @@ footer {
   .industries-nav h3 {
     font-size: 1.125em;
     display: inline; }
+    .industries-nav h3 a {
+      color: #4C5868; }
+  .industries-nav li.active h3 {
+    background: rgba(0, 0, 0, 0.2);
+    padding: 2px 9px;
+    border-radius: 15px; }
+    .industries-nav li.active h3 a {
+      color: #f1f1f1; }
 
 .news .headline {
   border-bottom: 1px solid #f1f1f1;
