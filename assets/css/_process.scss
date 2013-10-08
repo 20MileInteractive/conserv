@@ -1,15 +1,11 @@
-.news {
-	.headline {
-		border-bottom:1px solid #f1f1f1;
-		padding-top: 1em;
-	}
+.process {
 
 	.title-bar {
-		background: url(baystate-test-2.jpg) no-repeat 50% 50%;
+		background: url(baystate-test-1.jpg) no-repeat 50% 50%;
 		background-size: cover;
 	}
 
-	h4 {
+	h2 {
 		line-height: 60px;
 		background: #f1f1f1;
 		padding: 0 1rem;
@@ -19,6 +15,9 @@
 		font-size: emCalc(18px);
 	}
 
-	h2:hover {color: $primary-color;}
+	section.phase {
+		padding: 2rem 0;
+		border-bottom: 1px solid #ccc;
+	}
 
 }

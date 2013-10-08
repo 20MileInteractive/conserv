@@ -1,0 +1,20 @@
+.featured-project {
+  background: url(../img/automotive-baystate-slide2.jpg) no-repeat 50% 50%;
+  background-size: cover;
+  margin-bottom: 3rem; }
+  .featured-project .caption {
+    padding-top: 2rem;
+    background: rgba(255, 255, 255, 0.9);
+    min-height: 480px; }
+
+.portfolio .title-bar {
+  background: url(../img/baystate-test-2.jpg) no-repeat 50% 50%;
+  background-size: cover; }
+
+.portfolio-list {
+  margin-top: 2rem; }
+  .portfolio-list ul.block-grid {
+    padding-left: 0; }
+
+.orbit-container ul {
+  height: 677px; }
