@@ -1,6 +1,7 @@
 // Base style sheet
 $dark-bg: #333;
 $dark-bg-text: #f1f1f1;
+$highlight-color: #26B8B2;
 
 
 .page-content {
@@ -27,7 +28,9 @@ $dark-bg-text: #f1f1f1;
 	}
 }
 
-
+h3.callout {
+	color: $highlight-color; font-weight: 300; font-size: emCalc(24px); line-height: 1.6em; margin-top: 0;
+}
 .ico-social {
 	display: inline-block;
 	width: 32px; height: 32px;
@@ -50,6 +53,11 @@ $dark-bg-text: #f1f1f1;
 .photo-right {
 	float: left;
 	margin: 1rem 1rem 0 1rem;
+}
+
+.sidebar-cta {
+	margin-top: 3em;
+	h3 {font-weight: 300;}
 }
 
 // @group Forms

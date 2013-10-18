@@ -1,9 +1,13 @@
 header {
 	padding-top: 1rem;
 	border-bottom: 1px solid #ccc;
-	h1.site-id {margin: 0 0 1rem;}
+	h1.site-id {
+		margin: 0 0 1rem;
+		a {width: 180px; height: auto;}
+	}
 	li.phone, li.search {font-weight: normal; padding-right: 2em; line-height: 45px;}
 	
+	.top-bar {padding-top: 6px;}	
 
 }
 
@@ -17,11 +21,14 @@ header .top-bar .top-bar-section li {
 	color: #666;
 	&:first-child {
 		border-top: none;
+		background: #f1f1f1;
 	}
 	&:last-child {
 		border-bottom: none;
 	}
+	a:not(.button) {padding-left: 11px; padding-right: 11px;}
 }
+
 
 
 @media #{$screen} { 
@@ -45,6 +52,7 @@ header .top-bar .top-bar-section li {
 }
 
 @media #{$small} { 
+
 	// .nav-col {background: #fff;}
 	// h5.phone {display: block; background: #fff;}
 }

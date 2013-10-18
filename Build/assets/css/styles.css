@@ -4036,7 +4036,7 @@ kbd {
 
 /* Labels */
 .label {
-  font-weight: bold;
+  font-weight: 300;
   text-align: center;
   text-decoration: none;
   line-height: 1;
@@ -5014,6 +5014,13 @@ a.th {
     margin: 2rem auto;
     font-size: 1.5em; }
 
+h3.callout {
+  color: #26b8b2;
+  font-weight: 300;
+  font-size: 1.5em;
+  line-height: 1.6em;
+  margin-top: 0; }
+
 .ico-social {
   display: inline-block;
   width: 32px;
@@ -5033,6 +5040,11 @@ a.th {
 .photo-right {
   float: left;
   margin: 1rem 1rem 0 1rem; }
+
+.sidebar-cta {
+  margin-top: 3em; }
+  .sidebar-cta h3 {
+    font-weight: 300; }
 
 .prefix-label {
   display: block;
@@ -5073,10 +5085,15 @@ header {
   border-bottom: 1px solid #ccc; }
   header h1.site-id {
     margin: 0 0 1rem; }
+    header h1.site-id a {
+      width: 180px;
+      height: auto; }
   header li.phone, header li.search {
     font-weight: normal;
     padding-right: 2em;
     line-height: 45px; }
+  header .top-bar {
+    padding-top: 6px; }
 
 header .top-bar .top-bar-section li {
   border-top: solid 1px white;
@@ -5086,9 +5103,13 @@ header .top-bar .top-bar-section li {
   text-transform: uppercase;
   color: #666; }
   header .top-bar .top-bar-section li:first-child {
-    border-top: none; }
+    border-top: none;
+    background: #f1f1f1; }
   header .top-bar .top-bar-section li:last-child {
     border-bottom: none; }
+  header .top-bar .top-bar-section li a:not(.button) {
+    padding-left: 11px;
+    padding-right: 11px; }
 
 @media only screen {
   header .top-bar .top-bar-section li {
@@ -5229,12 +5250,12 @@ footer {
   background: url(../img/baystate-test-1.jpg) no-repeat 50% 50%;
   background-size: cover; }
 .process h2 {
+  border-right: 4px solid #7fa10a;
+  text-transform: uppercase;
+  text-align: right;
   line-height: 60px;
   background: #f1f1f1;
   padding: 0 1rem;
-  border-right: 4px solid #98C91B;
-  text-transform: uppercase;
-  text-align: right;
   font-size: 1.125em; }
 .process section.phase {
   padding: 2rem 0;
@@ -5250,7 +5271,7 @@ footer {
   margin-bottom: 3rem; }
   .featured-project .caption {
     padding-top: 2rem;
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(255, 255, 255, 0.75);
     min-height: 480px; }
 
 .portfolio .title-bar {
@@ -5271,3 +5292,8 @@ footer {
   .architect-build .title-bar h1 {
     line-height: 1em;
     padding-top: 46px; }
+
+.contact form label {
+  border-right: 4px solid #7fa10a;
+  text-transform: uppercase;
+  text-align: right; }

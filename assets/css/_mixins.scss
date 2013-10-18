@@ -1,1 +1,7 @@
 // Mixings
+
+@mixin nifty-label {
+		border-right: 4px solid $primary-color;
+		text-transform: uppercase;
+		text-align: right;
+}
