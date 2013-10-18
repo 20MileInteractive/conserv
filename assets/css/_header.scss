@@ -7,14 +7,18 @@ header {
 	}
 	li.phone, li.search {font-weight: normal; padding-right: 2em; line-height: 45px;}
 	
-	.top-bar {padding-top: 6px;}	
+	
 
 }
 
+.columns.nav-col {padding-left:0; padding-right:0;}
+
+.top-bar-section a:hover,
+.top-bar-section .dropdown li a:hover
+	{color: $primary-color;}
+
 
 header .top-bar .top-bar-section li {
-	border-top: solid 1px lighten($topbar-dropdown-bg, 10%);
-	border-bottom: solid 1px darken($topbar-dropdown-bg, 5%);
 	border-left: none;
 	border-right: none;
 	text-transform: uppercase;
@@ -29,12 +33,25 @@ header .top-bar .top-bar-section li {
 	a:not(.button) {padding-left: 11px; padding-right: 11px;}
 }
 
+.top-bar-section .dropdown li a {
+	padding: .75rem 15px;
+}
 
+
+.top-bar, .top-bar.expanded {
+	border-top: 1px solid #ccc;
+	background: #f1f1f1;
+}
+
+.top-bar.expanded .title-area {background: #f1f1f1;}
+
+.top-bar.expanded .top-bar-section {
+	border-top: 1px solid #f1f1f1;
+}
 
 @media #{$screen} { 
 	header .top-bar .top-bar-section li {
-		border-left: solid 1px darken($topbar-bg, 5%);
-		border-right: solid 1px lighten($topbar-bg, 10%);
+		border-left: 0 none;
 		border-bottom: none;
 		border-top: none;
 		&:first-child {
@@ -52,7 +69,23 @@ header .top-bar .top-bar-section li {
 }
 
 @media #{$small} { 
+	// .nav-col {border-left: 1px solid #f1f1f1;}
+	.top-bar, .top-bar.expanded {
+		padding-top: 10px;
+		border-top: 0 none;
+		background: transparent;
+	}
+	// .top-bar-section a:hover,
+	// .top-bar-section .dropdown li a:hover
+	// {border-left:3px solid $primary-color;}
 
-	// .nav-col {background: #fff;}
-	// h5.phone {display: block; background: #fff;}
+	
+}
+
+@media #{$medium} { 
+	.nav-col {border-left: none;}
+	// header .top-bar .top-bar-section li {
+	// 	border-left: solid 1px darken($topbar-bg, 5%);
+	// }
+	
 }

@@ -5092,12 +5092,16 @@ header {
     font-weight: normal;
     padding-right: 2em;
     line-height: 45px; }
-  header .top-bar {
-    padding-top: 6px; }
+
+.columns.nav-col {
+  padding-left: 0;
+  padding-right: 0; }
+
+.top-bar-section a:hover,
+.top-bar-section .dropdown li a:hover {
+  color: #7fa10a; }
 
 header .top-bar .top-bar-section li {
-  border-top: solid 1px white;
-  border-bottom: solid 1px #f2f2f2;
   border-left: none;
   border-right: none;
   text-transform: uppercase;
@@ -5111,10 +5115,22 @@ header .top-bar .top-bar-section li {
     padding-left: 11px;
     padding-right: 11px; }
 
+.top-bar-section .dropdown li a {
+  padding: .75rem 15px; }
+
+.top-bar, .top-bar.expanded {
+  border-top: 1px solid #ccc;
+  background: #f1f1f1; }
+
+.top-bar.expanded .title-area {
+  background: #f1f1f1; }
+
+.top-bar.expanded .top-bar-section {
+  border-top: 1px solid #f1f1f1; }
+
 @media only screen {
   header .top-bar .top-bar-section li {
-    border-left: solid 1px #f2f2f2;
-    border-right: solid 1px white;
+    border-left: 0 none;
     border-bottom: none;
     border-top: none; }
     header .top-bar .top-bar-section li:first-child {
@@ -5124,6 +5140,14 @@ header .top-bar .top-bar-section li {
 
   .contain-to-grid .top-bar {
     margin-bottom: 0; } }
+@media only screen and (min-width: 768px) {
+  .top-bar, .top-bar.expanded {
+    padding-top: 10px;
+    border-top: 0 none;
+    background: transparent; } }
+@media only screen and (min-width: 1280px) {
+  .nav-col {
+    border-left: none; } }
 footer {
   background: #222;
   color: #f1f1f1;
@@ -5139,7 +5163,7 @@ footer {
   z-index: -1;
   background: url(../img/automotive-baystate-slide2.jpg) no-repeat 50% 50%;
   background-size: cover;
-  height: 100%;
+  height: 101%;
   width: 100%;
   display: block; }
 .homepage section.hero {
