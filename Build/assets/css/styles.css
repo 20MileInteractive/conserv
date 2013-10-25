@@ -1,4 +1,3 @@
-@charset "UTF-8";
 *,
 *:before,
 *:after {
@@ -5181,6 +5180,8 @@ footer {
   .homepage .page-title h1 {
     margin: 0;
     text-transform: uppercase; }
+  .homepage .page-title h1 span {
+    text-transform: none; }
   .homepage .page-title h2 {
     margin-bottom: 1rem; }
 .homepage .portfolio-categories {
@@ -5223,6 +5224,8 @@ footer {
     text-align: center; }
     .homepage .architect-build .cta a {
       margin: 0 1em 1em; }
+  .homepage .architect-build li i {
+    padding-right: .5em; }
 .homepage .latest-news {
   padding: 2em 0 3em;
   background: #161616;
@@ -5273,6 +5276,8 @@ footer {
 .process .title-bar {
   background: url(../img/baystate-test-1.jpg) no-repeat 50% 50%;
   background-size: cover; }
+.process h3.callout {
+  color: #7fa10a; }
 .process h2 {
   border-right: 4px solid #7fa10a;
   text-transform: uppercase;
@@ -5285,6 +5290,27 @@ footer {
   padding: 2rem 0;
   border-bottom: 1px solid #ccc; }
 
+.services .service-list {
+  list-style-type: none;
+  padding: 0;
+  background: #f1f1f1; }
+  .services .service-list li {
+    padding: 1em 2em;
+    border-bottom: 1px solid #26b8b2;
+    font-size: 1.125em; }
+    .services .service-list li i {
+      font-size: 20px;
+      padding-right: .5em;
+      color: #26b8b2; }
+.services h3.addl-service {
+  border-bottom: 2px solid #1e928d;
+  background: #26b8b2;
+  color: #fff;
+  padding: .5em 1em;
+  display: inline-block;
+  border-radius: 5px 5px 0 0;
+  font-weight: 300;
+  letter-spacing: 1px; }
 .services .title-bar {
   background: url(../img/baystate-test-2.jpg) no-repeat 50% 50%;
   background-size: cover; }

@@ -1,5 +1,30 @@
 .services {
 
+	.service-list {
+		list-style-type: none;
+		padding: 0;
+		background: #f1f1f1;
+
+		li {
+			padding: 1em 2em;
+			border-bottom: 1px solid $highlight-color;
+			font-size: emCalc(18px);
+
+			i {font-size: 20px; padding-right: .5em; color: $highlight-color;}
+		}
+	}
+
+	h3.addl-service {
+		border-bottom: 2px solid darken($highlight-color, 9%);
+		background: $highlight-color;
+		color: #fff;
+		padding: .5em 1em;
+		display: inline-block;
+		border-radius: 5px 5px 0 0;
+		font-weight: 300;
+		letter-spacing: 1px;
+	}
+
 	.title-bar {
 		background: url(baystate-test-2.jpg) no-repeat 50% 50%;
 		background-size: cover;
