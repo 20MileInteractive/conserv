@@ -7,16 +7,16 @@
 
 		li {
 			padding: 1em 2em;
-			border-bottom: 1px solid $highlight-color;
+			border-bottom: 1px solid $primary-color;
 			font-size: emCalc(18px);
 
-			i {font-size: 20px; padding-right: .5em; color: $highlight-color;}
+			i {font-size: 20px; padding-right: .5em; color: $primary-color;}
 		}
 	}
 
 	h3.addl-service {
-		border-bottom: 2px solid darken($highlight-color, 9%);
-		background: $highlight-color;
+		border-bottom: 2px solid darken($primary-color, 9%);
+		background: $primary-color;
 		color: #fff;
 		padding: .5em 1em;
 		display: inline-block;

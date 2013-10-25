@@ -5276,8 +5276,6 @@ footer {
 .process .title-bar {
   background: url(../img/baystate-test-1.jpg) no-repeat 50% 50%;
   background-size: cover; }
-.process h3.callout {
-  color: #7fa10a; }
 .process h2 {
   border-right: 4px solid #7fa10a;
   text-transform: uppercase;
@@ -5296,15 +5294,15 @@ footer {
   background: #f1f1f1; }
   .services .service-list li {
     padding: 1em 2em;
-    border-bottom: 1px solid #26b8b2;
+    border-bottom: 1px solid #7fa10a;
     font-size: 1.125em; }
     .services .service-list li i {
       font-size: 20px;
       padding-right: .5em;
-      color: #26b8b2; }
+      color: #7fa10a; }
 .services h3.addl-service {
-  border-bottom: 2px solid #1e928d;
-  background: #26b8b2;
+  border-bottom: 2px solid #5d7607;
+  background: #7fa10a;
   color: #fff;
   padding: .5em 1em;
   display: inline-block;
