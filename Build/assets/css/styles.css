@@ -2834,7 +2834,7 @@ label.error {
   .top-bar .name {
     height: 45px;
     margin: 0;
-    font-size: 16; }
+    font-size: 16px; }
     .top-bar .name h1 {
       line-height: 45px;
       font-size: 1em;
@@ -2902,7 +2902,7 @@ label.error {
     height: auto;
     display: block;
     background: white;
-    font-size: 16;
+    font-size: 16px;
     margin: 0; }
   .top-bar-section .divider,
   .top-bar-section [role="separator"] {
@@ -3882,7 +3882,7 @@ form.custom {
     background: -moz-linear-gradient(top, white 0%, #f3f3f3 100%);
     background: -webkit-linear-gradient(top, white 0%, #f3f3f3 100%);
     -webkit-box-shadow: none;
-    background: linear, to bottom, white 0%, #f3f3f3 100%;
+    background: linear-gradient(to bottom, white 0%, #f3f3f3 100%);
     box-shadow: none;
     font-size: 0.875em;
     vertical-align: top; }
@@ -3989,7 +3989,7 @@ form.custom {
     padding: 0;
     background: white;
     border: solid 1px #cccccc;
-    font-size: 16; }
+    font-size: 16px; }
     form.custom .custom.dropdown ul li {
       color: #555555;
       font-size: 0.875em;
@@ -4387,14 +4387,14 @@ ul.pagination {
       background: white;
       background: -moz-linear-gradient(top, white 0%, #f2f2f2 100%);
       background: -webkit-linear-gradient(top, white 0%, #f2f2f2 100%);
-      background: linear, to bottom, white 0%, #f2f2f2 100%;
+      background: linear-gradient(to bottom, white 0%, #f2f2f2 100%);
       -webkit-box-shadow: 2px 0 10px 0 rgba(0, 0, 0, 0.07), 1000px 0 0 1000px #e1f5d1, -2px 0 10px 0 rgba(0, 0, 0, 0.07), -1000px 0 0 1000px whitesmoke;
       box-shadow: 2px 0 10px 0 rgba(0, 0, 0, 0.07), 1000px 0 0 980px #e1f5d1, -2px 0 10px 0 rgba(0, 0, 0, 0.07), -1000px 0 0 1000px whitesmoke; }
     div.switch:hover span:last-child, div.switch:focus span:last-child {
       background: white;
       background: -moz-linear-gradient(top, white 0%, #e6e6e6 100%);
       background: -webkit-linear-gradient(top, white 0%, #e6e6e6 100%);
-      background: linear, to bottom, white 0%, #e6e6e6 100%; }
+      background: linear-gradient(to bottom, white 0%, #e6e6e6 100%); }
     div.switch:active {
       background: transparent; }
     div.switch.large {
@@ -4599,7 +4599,7 @@ a.th {
   height: auto;
   background: white;
   border: solid 1px #cccccc;
-  font-size: 16;
+  font-size: 16px;
   z-index: 99;
   margin-top: 2px;
   max-width: 200px; }
@@ -4659,7 +4659,7 @@ a.th {
     max-height: none;
     background: white;
     border: solid 1px #cccccc;
-    font-size: 16;
+    font-size: 16px;
     z-index: 99;
     max-width: 200px; }
     .f-dropdown.content > *:first-child {
@@ -5199,7 +5199,7 @@ footer {
   /* Opera 11.10+ */
   background: -ms-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 39%, rgba(0, 0, 0, 0.65) 100%);
   /* IE10+ */
-  background: linear, to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 39%, rgba(0, 0, 0, 0.65) 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 39%, rgba(0, 0, 0, 0.65) 100%);
   /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 );
   /* IE6-9 */ }
@@ -5325,6 +5325,14 @@ footer {
 .portfolio .title-bar {
   background: url(../img/baystate-test-2.jpg) no-repeat 50% 50%;
   background-size: cover; }
+.portfolio .portfolio-categories {
+  margin-bottom: 2rem; }
+  .portfolio .portfolio-categories h3 {
+    text-transform: uppercase;
+    font-size: 24px;
+    text-align: center;
+    color: #666;
+    font-weight: 300; }
 
 .portfolio-list {
   margin-top: 2rem; }
